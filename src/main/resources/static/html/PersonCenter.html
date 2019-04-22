@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<!-- saved from url=(0066)http://www.17sucai.com/preview/1424582/2018-10-22/user/index.html# -->
+<html>
+
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+		<title>后台用户中心</title>
+		<link rel="stylesheet" type="text/css" href="../css/iconfont.css">
+		<link rel="stylesheet" type="text/css" href="../css/style.css">
+		<script src="../js/jquery-3.2.1.min.js"></script>
+	</head>
+
+	<body>
+		<div class="header">
+			<div class="bar">
+				<div class="w1200">
+					<span class="l">TF论坛<font>用户中心</font></span>
+					<span class="r"><a href="../index.html" id="exit"><i class="icon iconfont icon-dianyuan"></i>退出</a></span>
+				</div>
+			</div>
+			<div class="user-info">
+				<div class="w1200">
+					<div class="user-headface">
+						<img src="../img/user_face.jpg"/>
+					</div>
+					<div class="user-account">
+						<p class="tip">下午好，青衿</p>
+						<p class="account">
+							<span>帐户名：青衿</span>
+							<span>用户：1125493602@qq.com</span>
+						</p>
+					</div>
+					<div class="user-modify">
+						<a href="#" id="modified-data">修改资料&gt;</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="main w1200">
+			<div class="left">
+				<ul>
+					<li class="active" id="Message">
+						<a href="#">
+							<i class="icon iconfont icon-lingdang"></i> 消息
+						</a>
+					</li>
+					<li id="PersonMessage">
+						<a href="#">
+							<i class="icon iconfont icon-geren"></i> 个人资料
+						</a>
+					</li>
+					<li id="questions-and-answers">
+						<a href="#">
+							<i class="icon iconfont icon-wenda"></i> 问答
+						</a>
+					</li>
+					<li id="shopping">
+						<a href="#">
+							<i class="icon iconfont icon-icon--"></i> 购物
+						</a>
+					</li>
+					<li id="journal-heart">
+						<a href="#">
+							<i class="icon iconfont icon-pinglun"></i> 学报心得
+						</a>
+					</li>
+
+					<li id="journal-record">
+						<a href="#">
+							<i class="icon iconfont icon-jilu"></i> 看学报记录
+						</a>
+					</li>
+					<li id="guess-you-like">
+						<a href="#">
+							<i class="icon iconfont icon-fangzidichan"></i> 猜你喜欢
+						</a>
+					</li>
+				</ul>
+			</div>
+			<div class="right">
+				<div class="tap">
+					<span id="right-tap">系统消息</span>
+				</div>
+				<div class="container">
+					<div class="no-doc" id="no-doc">
+						<img src="../img/no_doc.jpg">
+						<p>您还没有消息哦~</p>
+					</div>
+
+<!--个人资料-->
+					<div class="no-doc-personmessage" id="no-doc-personmessage">
+						<div class="basic-information">
+							<h3>基本资料</h3>
+							<div>
+								<p>姓名:&nbsp;&nbsp; <span>青衿</span></p>
+								<p>性别:&nbsp;&nbsp; <span>女</span></p>
+								<p>学号:&nbsp; <span>41706339</span></p>
+								<p>班级:&nbsp; <span>2017级本科63班</span></p>
+								<p>专业:&nbsp; <span>计算机科学与技术</span></p>
+							</div>
+
+						</div>
+						<div class="About-journal">
+							<h3>关于学报</h3>
+							<div>
+								<p>本次是否报名:&nbsp; &nbsp; <span>否</span></p>
+								<p>累计听报次数: &nbsp; <span>3</span>&nbsp;次</p>
+							</div>
+						</div>
+					</div>
+					
+					
+					<!--修改个人资料-->
+					<div class="no-doc-personmessage" id="modified-personmessage">
+						<div class="basic-information">
+							<h3>基本资料</h3>
+							<div>
+								<p class="modifiedMessage-p">姓名:&nbsp;&nbsp; <input type="text" value="青衿" name="basic_message" class="a1"/></p>
+								<p class="modifiedMessage-p">性别:&nbsp;&nbsp; <input type="text" value="女" name="basic_message" class="a1"/></p>
+								<p class="modifiedMessage-p">学号:&nbsp; <input type="text" value="41706339" name="basic_message" class="a1"/></p>
+								<p class="modifiedMessage-p">班级:&nbsp; <input type="text" value="2017级本科63班" name="basic_message" class="a1"/></p>
+								<p class="modifiedMessage-p">专业:&nbsp; <input type="text" value="计算机科学与技术" name="basic_message" class="a1"/></p>
+							</div>
+
+						</div>
+						<div class="About-journal">
+							<h3>关于学报</h3>
+							<div>
+								<p>本次是否报名:&nbsp; &nbsp; <span>否</span></p>
+								<p>累计听报次数: &nbsp; <span>3</span>&nbsp;次</p>
+							</div>
+						</div>
+						<button id="Submit-modified-data">确认</button>
+					</div>
+					
+					
+					
+					
+				</div>
+			</div>
+		</div>
+
+		<div id="qb-sougou-search" style="display: none; opacity: 0;">
+			<p>搜索</p>
+			<p class="last-btn">复制</p><iframe src="./saved_resource.html"></iframe>
+		</div>
+		
+		<script>
+			//消息
+			$("#Message").click(function(){
+				$("#right-tap").html("系统消息");
+				$(this).addClass("active").siblings().removeClass("active");
+				$("#no-doc").css("display","block");
+				$("#no-doc-personmessage").css("display","none");
+				$("#modified-personmessage").css("display","none");
+			})
+			//个人资料
+			var arr0 = [];
+			$("#PersonMessage").click(function(){
+				$("#right-tap").html("个人资料");
+				$(this).addClass("active").siblings().removeClass("active");
+				$("#no-doc").css("display","none");
+				$("#no-doc-personmessage").css("display","block");
+				$("#modified-personmessage").css("display","none");
+				$(".basic-information p span").each(function(){
+					arr0.push($(this).html());					
+				})
+				console.log(arr0)
+				
+			})
+			//问答
+			$("#questions-and-answers").click(function(){
+				$("#right-tap").html("问答");
+				$(this).addClass("active").siblings().removeClass("active");
+				$("#no-doc").css("display","block");
+				$("#no-doc-personmessage").css("display","none");
+				$("#modified-personmessage").css("display","none");
+			})
+			//购物
+			$("#shopping").click(function(){
+				$("#right-tap").html("购物");
+				$(this).addClass("active").siblings().removeClass("active");
+				$("#no-doc").css("display","block");
+				$("#no-doc-personmessage").css("display","none");
+				$("#modified-personmessage").css("display","none");
+			})
+			//学报心得
+			$("#journal-heart").click(function(){
+				$("#right-tap").html("学报心得");
+				$(this).addClass("active").siblings().removeClass("active");
+				$("#no-doc").css("display","block");
+				$("#no-doc-personmessage").css("display","none");
+				$("#modified-personmessage").css("display","none");
+			})
+			//看学报记录
+			$("#journal-record").click(function(){
+				$("#right-tap").html("学报记录");
+				$(this).addClass("active").siblings().removeClass("active");
+				$("#no-doc").css("display","block");
+				$("#no-doc-personmessage").css("display","none");
+				$("#modified-personmessage").css("display","none");
+			})
+			//猜你喜欢
+			$("#guess-you-like").click(function(){
+				$("#right-tap").html("猜你喜欢");
+				$(this).addClass("active").siblings().removeClass("active");
+				$("#no-doc").css("display","block");
+				$("#no-doc-personmessage").css("display","none");
+				$("#modified-personmessage").css("display","none");
+			})
+			//修改资料
+			$("#modified-data").click(function(){
+				$("#right-tap").html("个人资料");
+				$("#PersonMessage").addClass("active").siblings().removeClass("active");
+				$("#no-doc").css("display","none");
+				$("#no-doc-personmessage").css("display","none");
+				$("#modified-personmessage").css("display","block");
+			})
+			//确认资料
+			var modifiedMessage_p_input =$(".a1");
+			$("#Submit-modified-data").click(function(){
+				var arr = [];
+				$("input[name='basic_message']").each(function(){
+					arr.push($(this).val());					
+				})
+				console.log(arr);
+				var temp = false;
+				for(var i = 0;i<arr.length;i++){
+					if(arr[i].toString() === arr0[i].toString())
+					{					   																		
+						alert("111");
+						console.log(arr[i]+":"+arr[i].toString());
+						console.log(arr0[i]+":"+arr0[i]);
+						temp = true;
+					}
+					else{
+						temp = false;
+					}
+				}
+				if(temp){
+					alert("请修改！")
+				}else{
+					alert("修改成功！")
+				}
+				
+				
+			})
+		</script>
+	</body>
+
+</html>

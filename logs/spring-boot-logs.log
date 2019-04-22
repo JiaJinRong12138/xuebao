@@ -1,0 +1,6 @@
+2019-04-20 10:57:32.420  INFO 6760 --- [http-nio-8080-exec-7] com.getTicket.utils.LoggerUtil           : 【INFO】:登陆API被调用ReqUserInfo{username='41700749', password='test1111', token='null'}
+2019-04-20 10:57:32.487 DEBUG 6760 --- [http-nio-8080-exec-7] c.g.dao.Mapper.selectUserInfoByUsername  : ==>  Preparing: select * from db_userinfo_ where username = ? 
+2019-04-20 10:57:32.488 DEBUG 6760 --- [http-nio-8080-exec-7] c.g.dao.Mapper.selectUserInfoByUsername  : ==> Parameters: 41700749(String)
+2019-04-20 10:57:32.518 DEBUG 6760 --- [http-nio-8080-exec-7] c.g.dao.Mapper.selectUserInfoByUsername  : <==      Total: 1
+2019-04-20 10:57:32.551  INFO 6760 --- [http-nio-8080-exec-7] com.getTicket.utils.LoggerUtil           : 【INFO】:登陆成功，生成token
+2019-04-20 10:57:32.565  INFO 6760 --- [http-nio-8080-exec-7] com.getTicket.utils.LoggerUtil           : 【INFO】：true

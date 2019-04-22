@@ -1,0 +1,448 @@
+* {
+	padding: 0;
+	margin: 0;
+}
+
+li {
+	list-style: none;
+}
+
+a {
+	text-decoration: none;
+	color: gray;
+}
+
+#box {
+	width: 100%;
+	background: #F8F8F8;
+}
+
+#head {
+	width: 100%;
+	height: 30px;
+	background: white;
+	border-bottom: 1px solid #ECECEC;
+}
+
+#head .head_ul {
+	width: 300px;
+	height: 30px;
+	float: left;
+}
+
+#head .head_ul li {
+	height: 30px;
+	float: left;
+	margin-left: 30px;
+	line-height: 30px;
+	font-size: 13px;
+}
+
+#head .head_ul li a:hover {
+	display: block;
+	border-bottom: 2px solid coral;
+	color: coral;
+	font-weight: 700;
+}
+
+.head_div {
+	width: 200px;
+	height: 30px;
+	line-height: 30px;
+	float: right;
+	position: relative;
+}
+
+.head_div p {
+	color: #333;
+	font-size: 14px;
+	cursor: pointer;
+	float: left;
+	text-decoration: underline;
+}
+
+.head_div p:hover {
+	color: orange;
+}
+
+.head_div .headpicture {
+	width: 30px;
+	height: 30px;
+	border-radius: 50%;
+	background: url(../img/tou.jpg) no-repeat;
+	background-size: 100% 100%;
+	float: left;
+	margin: 0 20px 0 0px;
+}
+
+.head_div .fa-bars {
+	width: 30px;
+	height: 30px;
+	position: absolute;
+	top: 7px;
+	right: 60px;
+}
+
+.fa-bars:hover .shezhi {
+	display: block;
+}
+
+.fa-bars .shezhi {
+	width: 70px;
+	height: 70px;
+	border: 1px solid gainsboro;
+	box-shadow: 1px 1px 1px grey;
+	margin-top: 8px;
+	display: none;
+	z-index: 100;
+}
+
+.fa-bars .shezhi p {
+	width: 70px;
+	height: 20px;
+	text-decoration: none;
+	line-height: 20px;
+	border-bottom: 1px solid dotted;
+	padding: 5px;
+}
+
+#nav {
+	width: 1000px;
+	height: 870px;
+	margin: 0 auto;
+	position: relative;
+}
+
+#nav .introduce {
+	width: 300px;
+	height: 250px;
+	background: white;
+	position: absolute;
+	margin-top: 10px;
+	border: 1px solid #E2E2E2;
+}
+
+.introduce .headPictrue {
+	width: 70px;
+	height: 70px;
+	border: 1px solid darkgrey;
+	border-radius: 50%;
+	margin: 20px auto;
+	background: url(../img/tou.jpg) no-repeat;
+	background-size: cover;
+}
+
+.introduce .jieshao {
+	width: 300px;
+	height: 150px;
+	text-align: center;
+	color: #888888;
+	font-size: 16px;
+	line-height: 30px;
+}
+
+#qiangpaio {
+	width: 90px;
+	height: 35px;
+	position: absolute;
+	left: 102px;
+	top: 280px;
+	background: #FFAA47;
+	border: none;
+	color: white;
+	cursor: pointer;
+}
+
+#nav .notice {
+	width: 300px;
+	height: 250px;
+	background: white;
+	position: absolute;
+	left: 0px;
+	top: 350px;
+}
+
+#nav .notice p {
+	width: 100px;
+	height: 30px;
+	background: #FFAA47;
+	line-height: 30px;
+	text-align: center;
+	border-radius: 20px;
+	color: white;
+	margin-left: 20px;
+	margin-top: 10px;
+}
+
+.notice_div {
+	width: 260px;
+	height: 215px;
+	margin-left: 20px;
+}
+
+#nav .notice li {
+	color: #C2C2C2;
+	padding: 10px 0 10px 0;
+	border-bottom: 1px dashed rgb(194, 194, 194);
+}
+
+#nav .notice li:hover a {
+	color: orange;
+}
+
+#nav .news {
+	background: #F0F0F0;
+	overflow: hidden;
+}
+
+.news_div1 {
+	margin-top: 12px;
+}
+
+.title {
+	width: 100px;
+	height: 30px;
+	background: #6ECADC;
+	line-height: 30px;
+	text-align: center;
+	border-radius: 5px;
+	color: white;
+	margin-left: 20px;
+	margin-top: 10px;
+}
+
+.news .detail-img {
+	width: 235px;
+	height: 135px;
+	background: url(../img/5538F736B299D181C2CC8AA15DE_BC7DE5CE_A996.jpg) no-repeat;
+	background-size: 100% 100%;
+	margin-left: 10px;
+	float: left;
+}
+
+.news .detail-font {
+	width: 400px;
+	height: 135px;
+	float: right;
+	position: relative;
+}
+
+.news .detail-font li {
+	color: grey;
+	/*padding: 5px;*/
+	font-size: 14px;
+	display: block;
+	height: 22px;
+	line-height: 22px;
+	width: 380px;
+	white-space: nowrap; //强制不换行
+	background: red;
+}
+
+.news .detail-font li:hover a {
+	color: orange;
+}
+
+.news .detail-font .xiangxi {
+	color: grey;
+	box-shadow: 1px 1px 5px 1px grey;
+	padding: 1px 5px 1px 5px;
+	position: absolute;
+	right: 30px;
+	bottom: 0px;
+}
+
+.news .detail-font .xiangxi:hover {
+	color: coral;
+}
+
+.video .video_group {
+	width: 640px;
+	height: 140px;
+	margin: 10px auto;
+}
+
+.video_group .video_content {
+	width: 135px;
+	height: 140px;
+	float: left;
+	margin-left: 20px;
+}
+
+.video_content .video_true {
+	width: 135px;
+	height: 110px;
+}
+
+.video_true img {
+	width: 135px;
+	height: 110px;
+	background-size: 100% 100%;
+}
+
+.video_content .video_introduce {
+	width: 135px;
+	height: 20px;
+	margin-top: 10px;
+	font-size: 12px;
+	color: darkgrey;
+	text-align: center;
+	cursor: pointer;
+}
+.video_content .video_introduce:hover{
+	color: orange;
+	cursor: pointer;
+}
+.message_inform {
+	width: 640px;
+	height: 140px;
+	margin: 10px auto;
+	position: relative;
+}
+
+.message_inform li {
+	width: 610px;
+	height: 25px;
+	line-height: 25px;
+	color: grey;
+	font-size: 14px;
+	white-space: nowrap;
+	/*强制不换行*/
+	/*background: palegoldenrod;*/
+	display: block;
+	border-bottom: 1px dashed gainsboro;
+	margin-left: 10px;
+}
+
+.message_inform li a:hover {
+	color: orange;
+}
+
+.message_time {
+	width: 100px;
+	height: 25px;
+	line-height: 25px;
+	display: block;
+	margin: 3px;
+	text-align: center;
+	font-size: 14px;
+	color: orange;
+}
+
+.message_inform li a {
+	width: 500px;
+	height: 25px;
+	display: block;
+	margin: 3px;
+	position: relative;
+	left: 100px;
+	top: -28px;
+}
+
+.message_inform .xiangxi {
+	color: grey;
+	box-shadow: 1px 1px 5px 1px grey;
+	padding: 1px 5px 1px 5px;
+	position: absolute;
+	right: 30px;
+	bottom: 0px;
+}
+
+#nav .frame {
+	width: 650px;
+	height: 200px;
+	margin-top: 10px;
+	background: white;
+}
+
+#nav .frame1 {
+	width: 650px;
+	height: 220px;
+	position: relative;
+}
+
+.frame1 .xiangxi {
+	text-align: center;
+	color: grey;
+	box-shadow: 1px 1px 5px 1px grey;
+	padding: 1px 5px 1px 5px;
+	position: absolute;
+	right: 30px;
+	bottom: 0px;
+}
+
+.select {
+	display: block;
+	border-bottom: 2px solid coral;
+	font-weight: 700;
+}
+
+.select a {
+	color: coral;
+}
+
+
+/*登录框*/
+
+.modal-content .message {
+	width: 280px;
+	height: 150px;
+	color: grey;
+	font-size: 16px;
+	text-align: center;
+	position: relative;
+	padding-top: 15px;
+}
+
+.message img {
+	width: 30px;
+	height: 30px;
+	background-size: 100% 100%;
+	margin-right: 10px;
+}
+
+.message input {
+	width: 200px;
+	height: 30px;
+	padding-left: 5px;
+	border-radius: 5px;
+	margin: 5px auto;
+	border: 1px solid grey;
+}
+
+.modal-content {
+	width: 300px;
+	height: 300px;
+	margin: 100px auto;
+}
+
+.modal-body {
+	width: 300px;
+	height: 160px;
+	padding: 10px;
+}
+
+#register {
+	background: none;
+	height: 30px;
+	border: none;
+	line-height: 10px;
+	margin: 0;
+}
+
+
+/*底部*/
+
+.foot {
+	width: 100%;
+	height: 30px;
+	background: #FAFAFA;
+	/*border-top: 1px solid #ECECEC;*/
+}
+
+#AAA {
+	width: 650px;
+	height: 850px;
+	position: absolute;
+	right: 0;
+}
